@@ -1,3 +1,14 @@
+
+window.onload = function() {
+    setTimeout(function() {
+        document.getElementById("popup").style.display = "flex";
+    }, 2000);
+
+    document.getElementById("close-popup").addEventListener("click", function() {
+        document.getElementById("popup").style.display = "none";
+    });
+}
+
 number_of_drums = document.querySelectorAll(".drum").length;
 for(var i=0; i<number_of_drums; i++ ){
     document.querySelectorAll(".drum")[i].addEventListener("click", function(){
